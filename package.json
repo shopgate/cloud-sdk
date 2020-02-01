@@ -80,7 +80,7 @@
     "socket.io-client": "2.3.0",
     "tar-fs": "1.16.3",
     "unzipper": "0.9.15",
-    "update-notifier": "3.0.1",
+    "update-notifier": "4.0.0",
     "uuid": "3.3.3"
   },
   "devDependencies": {
