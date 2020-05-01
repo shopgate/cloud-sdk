@@ -8,7 +8,9 @@
     "cover": "nyc mocha",
     "lint": "standard",
     "lint-staged": "lint-staged",
-    "check": "check-audit"
+    "check": "check-audit",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "lint-staged": {
     "*.js": "npm run lint"
@@ -81,7 +83,8 @@
     "tar-fs": "1.16.3",
     "unzipper": "0.9.15",
     "update-notifier": "3.0.1",
-    "uuid": "3.3.3"
+    "uuid": "3.3.3",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "chai": "4.2.0",
@@ -106,5 +109,6 @@
   "pre-commit": [
     "lint-staged",
     "test"
-  ]
+  ],
+  "snyk": true
 }
