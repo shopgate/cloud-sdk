@@ -126,7 +126,7 @@ describe('RapidDevServer', () => {
     it('should validate the environment', (done) => {
       const spy = sinon.spy(rapidDevServer, 'validateEnvironment')
 
-      process.env.ip = '0.0.0.0'
+      process.env.ip = '127.0.0.1'
       process.env.apiPort = 9666
 
       rapidDevServer.start()
@@ -144,7 +144,7 @@ describe('RapidDevServer', () => {
 
   describe('createServer()', () => {
     beforeEach(() => {
-      process.env.ip = '0.0.0.0'
+      process.env.ip = '127.0.0.1'
       process.env.apiPort = 9666
     })
 
@@ -180,7 +180,7 @@ describe('RapidDevServer', () => {
 
   describe('setErrorHandlers()', () => {
     beforeEach(() => {
-      process.env.ip = '0.0.0.0'
+      process.env.ip = '127.0.0.1'
       process.env.apiPort = 9666
     })
 
@@ -213,7 +213,7 @@ describe('RapidDevServer', () => {
 
   describe('setRoutes()', () => {
     beforeEach(() => {
-      process.env.ip = '0.0.0.0'
+      process.env.ip = '127.0.0.1'
       process.env.apiPort = 9666
     })
 

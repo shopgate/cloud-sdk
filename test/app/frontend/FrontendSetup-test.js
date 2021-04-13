@@ -60,7 +60,7 @@ const FrontendSetup = proxyquire('../../../lib/app/frontend/FrontendSetup', {
 })
 
 const defaultConfig = {
-  ip: '0.0.0.0',
+  ip: '127.0.0.1',
   port: 8080,
   apiPort: 9666,
   hmrPort: 3000,
